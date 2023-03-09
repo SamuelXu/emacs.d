@@ -136,7 +136,8 @@
 
 (require 'init-direnv)
 
-
+;; use vim mode
+(require 'init-evil)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
