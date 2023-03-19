@@ -105,7 +105,6 @@
 (require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
-(require 'init-common-lisp)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))
@@ -136,7 +135,7 @@
 (require 'init-direnv)
 
 ;; use vim mode
-(require 'init-evil)
+;; (require 'init-evil)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
