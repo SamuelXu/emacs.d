@@ -66,8 +66,7 @@
 (require 'init-recentf)
 (require 'init-minibuffer)
 (require 'init-hippie-expand)
-;;; (require 'init-corfu)
-(require 'init-company)
+(require 'init-corfu)
 (require 'init-windows)
 (require 'init-sessions)
 (require 'init-mmm)
@@ -133,9 +132,6 @@
   (add-hook 'after-init-hook 'global-eldoc-mode))
 
 (require 'init-direnv)
-
-;; use vim mode
-;; (require 'init-evil)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
