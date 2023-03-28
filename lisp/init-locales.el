@@ -21,6 +21,7 @@
 (setq locale-coding-system 'utf-8)
 (unless (eq system-type 'windows-nt)
   (set-selection-coding-system 'utf-8))
+(setq system-time-locale "C")
 
 (provide 'init-locales)
 ;;; init-locales.el ends here
