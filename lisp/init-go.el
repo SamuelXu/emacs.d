@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-;; (require 'init-eglot)
+(require 'init-eglot)
 (when (maybe-require-package 'go-mode)
   (setq gofmt-command "goimports")
   (add-hook 'before-save-hook #'gofmt-before-save)
@@ -20,13 +20,13 @@
         (cdr project))
       (add-hook 'project-find-functions #'project-find-go-module)))
 
-  ;;(add-hook 'go-mode-hook #'eglot-ensure)
-  ;; (setq eglot-ignored-server-capabilites '(:documentHighlightProvider)
-  ;;       read-process-output-max (* 1024 1024))
-  ;; (setq-default eglot-workspace-configuration
-  ;;     '((:gopls .
-  ;;         ((staticcheck . t)
-  ;;          (matcher . "CaseSensitive"))))))
+  (add-hook 'go-mode-hook #'eglot-ensure)
+  (setq eglot-ignored-server-capabilites '(:documentHighlightProvider)
+        read-process-output-max (* 1024 1024))
+  (setq-default eglot-workspace-configuration
+                '((:gopls .
+                          ((staticcheck . t)
+                           (matcher . "CaseSensitive")))))
 
   )
 
