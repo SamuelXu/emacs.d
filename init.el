@@ -116,6 +116,8 @@
 (require 'init-lisp)
 (require 'init-sly)
 
+(require 'init-neotree)
+
 (when *spell-check-support-enabled*
   (require 'init-spelling))
 
